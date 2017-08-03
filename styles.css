@@ -1,3 +1,49 @@
 body {
   background-color: aqua;
 }
+
+#wrapper {
+
+}
+
+div {
+  border: 1px solid black;
+}
+
+#calculator {
+
+
+  background-color: white;
+  width: 500px;
+  height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  /*align-self: center;*/
+
+}
+
+#input {
+  flex-basis: 100%;
+}
+
+.button {
+
+  flex-basis: 24%;
+}
+
+.operator {
+  flex-basis: 24%;
+}
+
+#submit {
+  flex-basis: 75%;
+}
+
+#clear {
+  flex-basis: 48%;
+}
+
+h1, h2 {
+  text-align: center;
+}
