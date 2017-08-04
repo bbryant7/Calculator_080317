@@ -18,15 +18,15 @@ let div = function divide(a,b){
 
 // loop to add event listener to each button and have them print out corresponding symbol
 let clickButton = document.getElementsByClassName("button");
-
+let numbers = "";
 for (let i = 0; i < clickButton.length; i++) {
   clickButton[i].addEventListener("click", myfunction);
   function myfunction() {
-    let numbers = clickButton[i].value;
-    let test = `<p>${numbers}</p>`;
-
-    document.getElementById("input").innerHTML = test;
-
+    numbers += clickButton[i].value;
+    let output = `<p>${numbers}</p>`;
+    document.getElementById("input").innerHTML = output;
+    // equation.push(numbers);
+    // console.log(numbers);
 
     }
 
@@ -37,24 +37,14 @@ for (let i = 0; i < clickButton.length; i++) {
 
 
 // Event Listener for  submit button
-let clickSubmit = document.getElementById("submit");
-let operatorA = document.getElementById("add");
-
-let operatorS = document.getElementById("sub");
-
-let operatorP = document.getElementById("prod");
-
-let operatorD = document.getElementById("div");
-
-
-
-clickSubmit.addEventListener("click",calculate);
-function calculate(){
-  let answer = "ggg";
- console.log(answer);
-}
-document.getElementById("input").innerHTML = answer;
-
+// let clickSubmit = document.getElementById("submit");
+// let operatorA = document.getElementById("add");
+//
+// let operatorS = document.getElementById("sub");
+//
+// let operatorP = document.getElementById("prod");
+//
+// let operatorD = document.getElementById("div");
 
 //   if (operator.value === "/"){
 //   return div;
@@ -68,3 +58,30 @@ document.getElementById("input").innerHTML = answer;
 //   else{
 //     return sub;
 //   }
+
+
+
+//
+let clickClear = document.getElementById("clear");
+
+  clickClear.addEventListener("click", clear);
+  function clear() {
+    numbers = "";
+    let output = `<p>${numbers}</p>`;
+    document.getElementById("input").innerHTML = output;
+  }
+
+
+
+
+
+
+
+
+let clickSubmit = document.getElementById("submit");
+clickSubmit.addEventListener("click",calculate);
+function calculate(){
+ eval(numbers);
+ let output = `<p>${numbers}</p>`;
+document.getElementById("input").innerHTML = output;
+}
