@@ -1,49 +1,63 @@
 body {
-  background-color: aqua;
-}
+  color: white;
+  font-family: 'Orbitron', sans-serif;
 
-#wrapper {
-
-}
-
-div {
-  border: 1px solid black;
 }
 
 #calculator {
 
-
-  background-color: white;
-  width: 500px;
-  height: 700px;
+  background-image: url("jeremy-thomas-128458.jpg");
+  background-size: cover;
+  width: 450px;
+  height: 600px;
   display: flex;
   flex-wrap: wrap;
   flex-basis: 100%;
-  /*align-self: center;*/
+  justify-content: space-between;
+  font-family: 'Orbitron', sans-serif;
+  border-radius: 10px;
+  margin-left: 33%;
 
 }
 
 #input {
-  flex-basis: 100%;
+  flex-basis: 90%;
+  background-color: black;
+  border-radius: 8px;
+  border: 2px solid #F4F6F6;
+  margin-top: 25px;
+  margin-left: 10px;
+  height: 75px;
+  font-size: 24px;
+  padding: 11px;
+
 }
 
 .button {
 
-  flex-basis: 24%;
+  flex-basis: 20%;
+  font-size: 24px;
+  margin: 10px;
+  border-radius: 8px;
+  border: 2px solid #F4F6F6;
+  background-color: rgb(4, 4, 4);
+  color: white;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .operator {
-  flex-basis: 24%;
+  flex-basis: 20%;
 }
 
 #submit {
-  flex-basis: 75%;
+  flex-basis: 71%;
 }
 
 #clear {
-  flex-basis: 48%;
+  flex-basis: 45%;
 }
 
 h1, h2 {
   text-align: center;
+  color: black;
 }
