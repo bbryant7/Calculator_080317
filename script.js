@@ -25,8 +25,14 @@ for (let i = 0; i < clickButton.length; i++) {
     numbers += clickButton[i].value;
     let output = `<p>${numbers}</p>`;
     document.getElementById("input").innerHTML = output;
-    // equation.push(numbers);
-    // console.log(numbers);
+
+    let clickSubmit = document.getElementById("submit");
+    clickSubmit.addEventListener("click",calculate);
+    function calculate(){
+     eval(numbers);
+     let output = `<p>${numbers}</p>`;
+    document.getElementById("input").innerHTML = output;
+    }
 
     }
 
@@ -72,16 +78,25 @@ let clickClear = document.getElementById("clear");
   }
 
 
+// SPACE FACTS STARTS HERE
+
+  let clickFacts = document.getElementById("space");
+  let space = ["Neutron stars can spin at a rate of 600 rotations per second.","If two pieces of the same type of metal touch in space, they will bond and be permanently stuck together.","99% of our solar system's mass is the sun.", "Pluto is smaller than the Earth's moon.","The Whirlpool Galaxy (M51) was the first celestial object identified as being spiral."];
+
+    clickFacts.addEventListener("click", spaceFacts);
+    function spaceFacts() {
+      let fact = space[Math.floor(Math.random() * space.length)];
+      let output = `<p>${fact}</p>`;
+      document.getElementById("input").innerHTML = output;
+
+    }
 
 
 
 
-
-
-let clickSubmit = document.getElementById("submit");
-clickSubmit.addEventListener("click",calculate);
-function calculate(){
- eval(numbers);
- let output = `<p>${numbers}</p>`;
-document.getElementById("input").innerHTML = output;
-}
+    // space facts:
+// 1. "Neutron stars can spin at a rate of 600 rotations per second."
+// 2. "If two pieces of the same type of metal touch in space, they will bond and be permanently stuck together."
+// 3. "99% of our solar system's mass is the sun."
+// 4. "pluto is smaller than the Earth's moon."
+// 5. "The Whirlpool Galaxy (M51) was the first celestial object identified as being spiral."
