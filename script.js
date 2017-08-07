@@ -18,26 +18,60 @@ let div = function divide(a,b){
 
 // loop to add event listener to each button and have them print out corresponding symbol
 let clickButton = document.getElementsByClassName("button");
-let numbers = "";
+let numbers = [];
 for (let i = 0; i < clickButton.length; i++) {
   clickButton[i].addEventListener("click", myfunction);
   function myfunction() {
     numbers += clickButton[i].value;
     let output = `<p>${numbers}</p>`;
     document.getElementById("input").innerHTML = output;
-
+}
     let clickSubmit = document.getElementById("submit");
     clickSubmit.addEventListener("click",calculate);
     function calculate(){
-     eval(numbers);
-     let output = `<p>${numbers}</p>`;
+
+      // Trying to create an if statement to create error if a none-number is put on numbers array first
+      // if (numbers[0] === ('+' || '*'|| '/')) {
+      //   let output = `<p>ERROR</p>`;
+      //   document.getElementById("input").innerHTML = output;
+      //   console.log('numbers',numbers);
+      //     console.log('output',output);
+      // }
+     else {let output = `<p>${eval(numbers)}</p>`;
     document.getElementById("input").innerHTML = output;
-    }
+
+
 
     }
+
+
 
 
 }
+}
+
+// option 2 with no eval:
+
+// for (var i = 0; i < numbers.length; i++) {
+//   if (numbers[0] === ('+' || '*'|| '/')){
+//     return "error"
+//     // send to out put
+//   }
+//   if numbers[i] === '*'{
+//     return prod;
+//   }
+//
+//   if numbers[i] === '-'{
+//     return sub;
+//   }
+//   if numbers[i] === '+'{
+//     return add;
+//   }
+//   if numbers[i] === '/'{
+//     return div;
+//   }
+//
+// }
 
 
 
