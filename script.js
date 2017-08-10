@@ -63,7 +63,7 @@ clickClear.addEventListener("click", function() {
 // SPACE FACTS STARTS HERE
 
 let clickFacts = document.getElementById("space");
-let space = ["Neutron stars can spin at a rate of 600 rotations per second.", "If two pieces of the same type of metal touch in space, they will bond and be permanently stuck together.", "99% of our solar system's mass is the sun.", "Pluto is smaller than the Earth's moon.", "The Whirlpool Galaxy (M51) was the first celestial object identified as being spiral."];
+let space = ["Neutron stars can spin at a rate of 600 rotations per second.", "If two pieces of metal of the same type touch in space, they will permanently bond.", "99% of our solar system's mass is the sun.", "Pluto is smaller than the Earth's moon.", "The Whirlpool Galaxy (M51) was the first celestial object identified as being spiral."];
 
 clickFacts.addEventListener("click", function() {
   let fact = space[Math.floor(Math.random() * space.length)];

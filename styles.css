@@ -1,7 +1,9 @@
+
 body {
   color: white;
   font-family: 'Orbitron', sans-serif;
-
+  display: flex;
+  justify-content: center;
 }
 
 #calculator {
@@ -16,7 +18,7 @@ body {
   justify-content: space-between;
   font-family: 'Orbitron', sans-serif;
   border-radius: 10px;
-  margin-left: 33%;
+
   border: 2px, solid, black;
 
 }
@@ -54,7 +56,15 @@ body {
   color: white;
   font-family: 'Orbitron', sans-serif;
   opacity: .8;
+  outline: black;
 }
+.button:hover {
+  opacity: 1;
+}
+
+/*.button:active {
+opacity: 1;
+}*/
 
 .operator {
   flex-basis: 20%;
@@ -73,6 +83,6 @@ flex-basis: 96%;
 }
 
 h1, h2 {
-  text-align: center;
   color: black;
+  text-align: center;
 }
