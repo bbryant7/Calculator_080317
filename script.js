@@ -1,29 +1,41 @@
 // loop to add event listener to each button and have them print out corresponding symbol
-// NUMBERS AND OPPERATORS buttons
+
 let input = document.getElementById("input");
 let clickButton = document.getElementsByClassName("button");
 // let clickOperator = document.getElementsByClassName("operator");
 let clickSubmit = document.getElementById("submit");
 let clickClear = document.getElementById("clear");
 let numbers = [];
-  // if (input.textContent.length < 10)
+// if (input.textContent.length < 10)
 
+// NUMBERS AND OPPERATORS buttons
 for (let i = 0; i < clickButton.length; i++) {
   clickButton[i].addEventListener("click", function() {
     numbers += clickButton[i].value;
-    // if (numbers[0] === ('/' || '*' || '+' || '-')) {
-    //   let output = `<p>Error</p>`;
-    //   document.getElementById("input").innerHTML = output;
-    // }
 
-
-    if (numbers.length < 20 ) {
+    if (numbers.length < 20) {
       let output = `<p>${numbers}</p>`;
+      document.getElementById("input").innerHTML = output;
+    } else {
+      let output = `<p>The universe can not contain this equation!</p>`;
       document.getElementById("input").innerHTML = output;
     }
 
-    else {
-      let output = `<p>The universe can not contain this equation!</p>`;
+    if (numbers[0] === '/') {
+      let output = `<p>Error</p>`;
+      document.getElementById("input").innerHTML = output;
+    }
+
+    if (numbers[0] === '*') {
+      let output = `<p>Error</p>`;
+      document.getElementById("input").innerHTML = output;
+    }
+    if (numbers[0] === '-') {
+      let output = `<p>Error</p>`;
+      document.getElementById("input").innerHTML = output;
+    }
+    if (numbers[0] === '+') {
+      let output = `<p>Error</p>`;
       document.getElementById("input").innerHTML = output;
     }
 
@@ -33,9 +45,8 @@ for (let i = 0; i < clickButton.length; i++) {
 // SUBMIT BUTTON
 
 clickSubmit.addEventListener("click", function() {
-  let output = `<p>${eval(numbers)}</p>`;
-  document.getElementById("input").innerHTML = output;
-  let ouput = '';
+    let output = `<p>${eval(numbers)}</p>`;
+    document.getElementById("input").innerHTML = output;
 
 })
 
@@ -43,7 +54,7 @@ clickSubmit.addEventListener("click", function() {
 // CLEAR BUTTON
 
 clickClear.addEventListener("click", function() {
-  numbers = "";
+  numbers = [];
   let output = `<p>${numbers}</p>`;
   document.getElementById("input").innerHTML = output;
 })
