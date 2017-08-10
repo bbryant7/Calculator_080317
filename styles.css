@@ -1,4 +1,3 @@
-
 body {
   color: white;
   font-family: 'Orbitron', sans-serif;
@@ -7,7 +6,6 @@ body {
 }
 
 #calculator {
-
   background-image: url("jeremy-thomas-128458.jpg");
   background-size: cover;
   width: 450px;
@@ -18,15 +16,12 @@ body {
   justify-content: space-between;
   font-family: 'Orbitron', sans-serif;
   border-radius: 10px;
-
   border: 2px, solid, black;
-
 }
 
 #input {
   color: black;
   flex-basis: 90%;
-  /*background-color: black;*/
   max-width: 400px;
   border-radius: 8px;
   border: 4px solid #F4F6F6;
@@ -38,7 +33,6 @@ body {
   height: 75px;
   font-size: 24px;
   padding: 11px;
-
 }
 
 #input p {
@@ -46,7 +40,6 @@ body {
 }
 
 .button {
-
   flex-basis: 20%;
   font-size: 24px;
   margin: 10px;
@@ -58,13 +51,10 @@ body {
   opacity: .8;
   outline: black;
 }
+
 .button:hover {
   opacity: 1;
 }
-
-/*.button:active {
-opacity: 1;
-}*/
 
 .operator {
   flex-basis: 20%;
@@ -79,7 +69,7 @@ opacity: 1;
 }
 
 #space {
-flex-basis: 96%;
+  flex-basis: 96%;
 }
 
 h1, h2 {
