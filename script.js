@@ -25,12 +25,7 @@ for (let i = 0; i < clickButton.length; i++) {
       let output = `<p>Error</p>`;
       document.getElementById("input").innerHTML = output;
     }
-
     if (numbers[0] === '*') {
-      let output = `<p>Error</p>`;
-      document.getElementById("input").innerHTML = output;
-    }
-    if (numbers[0] === '-') {
       let output = `<p>Error</p>`;
       document.getElementById("input").innerHTML = output;
     }
