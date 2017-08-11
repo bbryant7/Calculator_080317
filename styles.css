@@ -28,11 +28,11 @@ body {
   background-color: white;
   opacity: .6;
   margin-top: 25px;
+  margin-left: 10px;
   height: 75px;
   font-size: 24px;
   padding: 11px;
 }
-
 
 .button {
   flex-basis: 20%;

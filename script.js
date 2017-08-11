@@ -1,7 +1,7 @@
 // loop to add event listener to each button and have them print out corresponding symbol
 
 let input = document.getElementById("input");
-let clickButton = document.getElementsByClassName("button"); 
+let clickButton = document.getElementsByClassName("button");
 let clickSubmit = document.getElementById("submit");
 let clickClear = document.getElementById("clear");
 let numbers = [];
@@ -38,8 +38,8 @@ for (let i = 0; i < clickButton.length; i++) {
 // SUBMIT BUTTON
 
 clickSubmit.addEventListener("click", function() {
-    let output = `<p>${eval(numbers)}</p>`;
-    document.getElementById("input").innerHTML = output;
+  let output = `<p>${eval(numbers)}</p>`;
+  document.getElementById("input").innerHTML = output;
 
 })
 
