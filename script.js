@@ -1,12 +1,10 @@
 // loop to add event listener to each button and have them print out corresponding symbol
 
 let input = document.getElementById("input");
-let clickButton = document.getElementsByClassName("button");
-// let clickOperator = document.getElementsByClassName("operator");
+let clickButton = document.getElementsByClassName("button"); 
 let clickSubmit = document.getElementById("submit");
 let clickClear = document.getElementById("clear");
 let numbers = [];
-// if (input.textContent.length < 10)
 
 // NUMBERS AND OPPERATORS buttons
 for (let i = 0; i < clickButton.length; i++) {
@@ -77,34 +75,22 @@ clickFacts.addEventListener("click", function() {
 
 
 
-// Trying to create an if statement to create error if a none-number is put on numbers array first
-// if (numbers[0] === ('+' || '*'|| '/')) {
-//   let output = `<p>ERROR</p>`;
-//   document.getElementById("input").innerHTML = output;
-//   console.log('numbers',numbers);
-//     console.log('output',output);
-// }
-//  else {
-// }
+
 
 // option 2 with no eval:
 
-// for (var i = 0; i < numbers.length; i++) {
-//   if (numbers[0] === ('+' || '*'|| '/')){
-//     return "error"
-//     // send to out put
-//   }
-//   if numbers[i] === '*'{
+// Use includes
+//   if numbers === '*'{
 //     return prod;
 //   }
 //
-//   if numbers[i] === '-'{
+//   if numbers === '-'{
 //     return sub;
 //   }
-//   if numbers[i] === '+'{
+//   if numbers === '+'{
 //     return add;
 //   }
-//   if numbers[i] === '/'{
+//   if numbers === '/'{
 //     return div;
 //   }
 //
