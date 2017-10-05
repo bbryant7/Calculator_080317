@@ -1,5 +1,5 @@
 
-# Space A Calculator
+# Space Calculator
 
 A simple calculator that can do basic math with a great bonus: SPACE FACTS!
 
