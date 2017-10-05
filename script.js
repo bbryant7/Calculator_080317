@@ -2,9 +2,11 @@
 
 let input = document.getElementById("input");
 let clickButton = document.getElementsByClassName("button");
+// let clickOperator = document.getElementsByClassName("operator");
 let clickSubmit = document.getElementById("submit");
 let clickClear = document.getElementById("clear");
 let numbers = [];
+// if (input.textContent.length < 10)
 
 // NUMBERS AND OPPERATORS buttons
 for (let i = 0; i < clickButton.length; i++) {
@@ -23,7 +25,12 @@ for (let i = 0; i < clickButton.length; i++) {
       let output = `<p>Error</p>`;
       document.getElementById("input").innerHTML = output;
     }
+
     if (numbers[0] === '*') {
+      let output = `<p>Error</p>`;
+      document.getElementById("input").innerHTML = output;
+    }
+    if (numbers[0] === '-') {
       let output = `<p>Error</p>`;
       document.getElementById("input").innerHTML = output;
     }
@@ -38,8 +45,8 @@ for (let i = 0; i < clickButton.length; i++) {
 // SUBMIT BUTTON
 
 clickSubmit.addEventListener("click", function() {
-  let output = `<p>${eval(numbers)}</p>`;
-  document.getElementById("input").innerHTML = output;
+    let output = `<p>${eval(numbers)}</p>`;
+    document.getElementById("input").innerHTML = output;
 
 })
 
@@ -75,22 +82,34 @@ clickFacts.addEventListener("click", function() {
 
 
 
-
+// Trying to create an if statement to create error if a none-number is put on numbers array first
+// if (numbers[0] === ('+' || '*'|| '/')) {
+//   let output = `<p>ERROR</p>`;
+//   document.getElementById("input").innerHTML = output;
+//   console.log('numbers',numbers);
+//     console.log('output',output);
+// }
+//  else {
+// }
 
 // option 2 with no eval:
 
-// Use includes
-//   if numbers === '*'{
+// for (var i = 0; i < numbers.length; i++) {
+//   if (numbers[0] === ('+' || '*'|| '/')){
+//     return "error"
+//     // send to out put
+//   }
+//   if numbers[i] === '*'{
 //     return prod;
 //   }
 //
-//   if numbers === '-'{
+//   if numbers[i] === '-'{
 //     return sub;
 //   }
-//   if numbers === '+'{
+//   if numbers[i] === '+'{
 //     return add;
 //   }
-//   if numbers === '/'{
+//   if numbers[i] === '/'{
 //     return div;
 //   }
 //
