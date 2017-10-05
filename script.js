@@ -2,13 +2,13 @@
 
 let input = document.getElementById("input");
 let clickButton = document.getElementsByClassName("button");
-// let clickOperator = document.getElementsByClassName("operator");
 let clickSubmit = document.getElementById("submit");
 let clickClear = document.getElementById("clear");
 let numbers = [];
 // if (input.textContent.length < 10)
 
 // NUMBERS AND OPPERATORS buttons
+
 for (let i = 0; i < clickButton.length; i++) {
   clickButton[i].addEventListener("click", function() {
     numbers += clickButton[i].value;
@@ -79,38 +79,3 @@ clickFacts.addEventListener("click", function() {
 // 3. "99% of our solar system's mass is the sun."
 // 4. "pluto is smaller than the Earth's moon."
 // 5. "The Whirlpool Galaxy (M51) was the first celestial object identified as being spiral."
-
-
-
-// Trying to create an if statement to create error if a none-number is put on numbers array first
-// if (numbers[0] === ('+' || '*'|| '/')) {
-//   let output = `<p>ERROR</p>`;
-//   document.getElementById("input").innerHTML = output;
-//   console.log('numbers',numbers);
-//     console.log('output',output);
-// }
-//  else {
-// }
-
-// option 2 with no eval:
-
-// for (var i = 0; i < numbers.length; i++) {
-//   if (numbers[0] === ('+' || '*'|| '/')){
-//     return "error"
-//     // send to out put
-//   }
-//   if numbers[i] === '*'{
-//     return prod;
-//   }
-//
-//   if numbers[i] === '-'{
-//     return sub;
-//   }
-//   if numbers[i] === '+'{
-//     return add;
-//   }
-//   if numbers[i] === '/'{
-//     return div;
-//   }
-//
-// }
